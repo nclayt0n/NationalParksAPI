@@ -13,9 +13,8 @@ function displayProps(response) {
         descriptions.push(response.data[i].description);
         urls.push(response.data[i].url);
         $(`#parkInfo`).append(`<section class="parks" id=parkInfo${i}></section>`);
-        $(`#parkInfo${i}`).html(`<ul class="parkInfo">${names[i]}</ul><li>${descriptions[i]}</li><br><li>Visit<a href="${urls[i]}">${urls[i]}</a> for more information!</li>`);
+        $(`#parkInfo${i}`).html(`<ul class="parkInfo">${names[i]}</ul><li>${descriptions[i]}</li><br><li>Visit<a href="${urls[i]}" target="blank">${urls[i]} </a>for more information!</li>`);
     }
-    $('#parkInfo').append(`<a href="#TopOfSearch" id="pageLink">Back to the top</a>`)
 
 }
 
@@ -37,7 +36,6 @@ function fetching(searchURL) {
 function getState() {
     $('#enter').click(event => {
         $('.parks').remove();
-        $('#pageLink').remove();
         const stateSearch = $('#stateSearch').val();
         const maxResults = $('#resultAmt').val();
         const searchURL = `https://developer.nps.gov/api/v1/parks?stateCode=${stateSearch}&limit=${maxResults}&fields=addresses&api_key=${apiKey}`;
