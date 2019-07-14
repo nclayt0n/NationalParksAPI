@@ -161,6 +161,10 @@ body {
     width: 50%;
 }
 
+#pageLink {
+    font-size: 12px;
+}
+
 form {
     margin: 10px;
     padding: 10px;
@@ -191,8 +195,8 @@ main {
     width: fit-content;
     font-size: 20px;
     background-color: rgba(3, 58, 83, 0.5);
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 25px;
     letter-spacing: .5px;
     line-height: 26px;
 }
