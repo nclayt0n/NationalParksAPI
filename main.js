@@ -13,7 +13,7 @@ function displayProps(response) {
         descriptions.push(response.data[i].description);
         urls.push(response.data[i].url);
         $(`#parkInfo`).append(`<section class="parks" id=parkInfo${i}></section>`);
-        $(`#parkInfo${i}`).html(`<ul class="parkInfo">${names[i]}</ul><li>${descriptions[i]}</li><br><li>Visit<a href="${urls[i]}" target="blank">${urls[i]} </a>for more information!</li>`);
+        $(`#parkInfo${i}`).html(`<ul class="parkInfo">${names[i]}</ul><li>${descriptions[i]}</li><br><li>Visit<a href="${urls[i]}" target="_blank">${urls[i]} </a>for more information!</li>`);
     }
 
 }
