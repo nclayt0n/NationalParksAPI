@@ -4,7 +4,6 @@ let descriptions = [];
 let urls = [];
 let address = [];
 
-
 function displayProps(response) {
     console.log(response);
     for (let i = 0; i < response.data.length; i++) {
@@ -15,9 +14,7 @@ function displayProps(response) {
         $(`#parkInfo`).append(`<section class="parks" id=parkInfo${i}></section>`);
         $(`#parkInfo${i}`).html(`<ul class="parkInfo">${names[i]}</ul><li>${descriptions[i]}</li><br><li>Visit<a href="${urls[i]}" target="_blank">${urls[i]} </a>for more information!</li>`);
     }
-
 }
-
 
 function fetching(searchURL) {
     fetch(searchURL)
@@ -43,7 +40,4 @@ function getState() {
 
     });
 }
-
-
-
 $(getState);

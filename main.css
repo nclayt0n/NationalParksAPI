@@ -154,7 +154,7 @@
      background-repeat: no-repeat;
      background-size: cover;
      color: rgb(255, 174, 0);
-     width: 300px;
+     width: 250px;
  }
  
  form {
@@ -313,12 +313,5 @@
          padding: 25px;
          margin: 10px;
          background-color: rgba(1, 6, 27, 0.3);
-     }
- }
- 
- @media screen and(min-width:750px) {
-     #parkInfo {
-         display: flex;
-         flex-direction: row;
      }
  }
