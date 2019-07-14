@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: .25px .25px rgba(15, 54, 224, 0.9);
+}
+
+body {
+    margin: 20px;
+    padding: 10px;
+    background-image: url('images/misty-mountain-ranges-at-sunrise.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 174, 0);
+    width: 75%;
+}
+
+form {
+    margin: 10px;
+    padding: 10px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+main {
+    width: fit-content;
+    font-size: 20px;
+    background-color: rgba(3, 58, 83, 0.5);
+    margin: 10px;
+    padding: 10px;
+    letter-spacing: .5px;
+    line-height: 26px;
+}
+
+#errorDisplay {
+    text-align: center;
+}
+
+input,
+select {
+    width: 200px;
+    margin: 3px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    text-decoration: underline;
+    font-size: 24px;
+    text-align: center;
+}
+
+li {
+    text-indent: 10px;
+    list-style-type: none;
+    text-align: left;
+    color: white;
+    line-height: 26px;
+}
+
+.parks {
+    padding: 25px;
+    margin: 10px;
+    background-color: rgba(1, 6, 27, 0.3);
+}
