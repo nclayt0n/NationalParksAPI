@@ -157,17 +157,6 @@
      width: 400px;
  }
  
- form {
-     margin: 10px;
-     padding: 10px;
- }
- 
- a {
-     color: white;
-     text-decoration: none;
-     cursor: pointer;
- }
- 
  title {
      display: none;
  }
@@ -223,9 +212,20 @@
      line-height: 22px;
  }
  
+ form {
+     margin: 10px;
+     padding: 10px;
+ }
+ 
+ a {
+     color: white;
+     text-decoration: none;
+     cursor: pointer;
+     font-size: 10px;
+ }
+ 
  .parks {
      width: 300px;
-     ;
      padding: 25px;
      margin: 10px;
      background-color: rgba(1, 6, 27, 0.3);
