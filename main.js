@@ -5,16 +5,16 @@ let urls = [];
 let address = [];
 
 function displayProps(response) {
-    console.log(response);
     for (let i = 0; i < response.data.length; i++) {
-        address.push(response.data[i].addresses[i]);
+        address.push(response.data[i].addresses);
         names.push(response.data[i].fullName);
         descriptions.push(response.data[i].description);
         urls.push(response.data[i].url);
-        $(`#parkInfo`).append(`<section class="parks" id=parkInfo${i}></section>`);
-        $(`#parkInfo${i}`).html(`<ul class="parkInfo">${names[i]}</ul><li>${descriptions[i]}</li><br><li>Visit<a href="${urls[i]}" target="_blank">${urls[i]} </a>for more information!</li>`);
     }
-    //figure out how to splice out just the middle
+    for (let i = 0; i < response.data.length; i++) {
+        $(`#parkInfo`).append(`<section class="parks" id=parkInfo${i}></section>`);
+        $(`#parkInfo${i}`).html(`<ul class="parkInfo">${names[i]}</ul><li>${descriptions[i]}</li><br><li>Visit<a href="${urls[i]}" target="_blank">${urls[i]} </a>for more information!</li><li class="address">${address[i][0].line1}, ${address[i][0].city}, ${address[i][0].stateCode}</li>`);
+    }
 }
 
 function fetching(searchURL) {
