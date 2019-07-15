@@ -184,7 +184,7 @@
  }
  
  main {
-     width: fit-content;
+     width: 350px;
      font-size: 14px;
      background-color: rgba(3, 58, 83, 0.5);
      margin: 25px;
@@ -224,7 +224,7 @@
  }
  
  .parks {
-     width: 325px;
+     width: 300px;
      ;
      padding: 25px;
      margin: 10px;
@@ -312,6 +312,7 @@
          line-height: 26px;
      }
      .parks {
+         width: fit-content;
          padding: 25px;
          margin: 10px;
          background-color: rgba(1, 6, 27, 0.3);
