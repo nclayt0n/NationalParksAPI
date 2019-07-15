@@ -13,7 +13,7 @@ function displayProps(response) {
     }
     for (let i = 0; i < response.data.length; i++) {
         $(`#parkInfo`).append(`<section class="parks" id=parkInfo${i}></section>`);
-        $(`#parkInfo${i}`).html(`<ul class="parkInfo">${names[i]}</ul><li>${descriptions[i]}</li><br><li>Visit<a href="${urls[i]}" target="_blank">${urls[i]} </a>for more information!</li><li class="address">${address[i][0].line1}, ${address[i][0].city}, ${address[i][0].stateCode}</li>`);
+        $(`#parkInfo${i}`).html(`<ul class="parkInfo">${names[i]}</ul><li>${descriptions[i]}</li><br><li id="url">Visit <a href="${urls[i]}" target="_blank">${urls[i]} </a>for more information!</li><li class="address">${address[i][0].line1}, ${address[i][0].city}, ${address[i][0].stateCode}</li>`);
     }
 }
 
